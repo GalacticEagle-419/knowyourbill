@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Customizing the scrollbar */
+::-webkit-scrollbar {
+    height: 6px;
+    width: 4px;
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #f9f9f900;
+}
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(204, 202, 202, 0.6);
+    border-radius: 10px;
+    width: 2px;
+    height: 2px;
+}
+
+/* On hover, make the handle darker */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* On scrollbar drag, make the handle even darker */
+::-webkit-scrollbar-thumb:active {
+    background-color: #333;
+}
+
+/* Hide the horizontal scrollbar while allowing horizontal overflow */
+body {
+    overflow-x: hidden;
+}
+
+.chat_message li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
